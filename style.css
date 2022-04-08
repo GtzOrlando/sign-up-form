@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+}
+
+.leftSide {
+    background-image: url("./images/halie-west-unsplash.jpg");
+    background-size: 931px auto;
+    width: 931px;
+    height: 1396px;
+}
+
+.logoBox {
+    display: flex;
+    align-items: center;
+}
+
+.photoCredits {
+    align-self: flex-end;
+}
