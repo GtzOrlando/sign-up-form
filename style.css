@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Signika:wght@500&display=swap');
+
+@font-face {
+    font-family: NorseBold;
+    src: url("./font-styles/Norse-Bold.otf") format("opentype");
+}
+
 body {
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
     margin: 0;
+    font-family: 'Signika';
 }
 
 .leftSide {
@@ -10,13 +18,106 @@ body {
     background-size: 931px auto;
     width: 931px;
     height: 1396px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logoBox {
     display: flex;
     align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: "NorseBold";
+    height: 180px;
+    width: 100%;
+    margin-top: 200px;
+    justify-content: center;
+    font-size: 100px;
 }
 
-.photoCredits {
-    align-self: flex-end;
+img {
+    max-height: 90%;
+    max-width: auto;
+}
+
+.rightSide {
+    padding-top: 140px;
+    background-color: rgb(235, 235, 235);
+}
+
+.headerText, .bottomText {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 240px;
+}
+
+.headerText {
+    font-size: 25px;
+}
+
+.beggingPhrase {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+legend {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.middleForm {
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 5px 5px 5px gray;
+    font-size: 15px;
+}
+
+label {
+    font-family: "Poppins"; 
+    font-weight: bolder;
+}
+
+input {
+    width: 250px;
+    border: solid;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    padding: 5px 10px;
+    border-width: 1px;
+}
+
+button { 
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 50px;
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.logInText {
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bolder;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.fullName, .emailAndNumber, .password {
+    display: flex;
+    gap: 60px;
 }

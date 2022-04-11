@@ -13,7 +13,7 @@
             <img src="./images/odin-lined.png" alt="Odin Logo" class="odinLogo">
             <div class="logoText">ODIN</div>
         </div>
-        <div class="photoCredits">Photo by <a>Halie West</a> on <a>Unsplash</a></div>
+        <div class="photoCredits">Photo by <u>Halie West</u> on <u>Unsplash</u></div>
     </div>
     <div class="rightSide">
         <div class="headerText">
@@ -21,34 +21,51 @@
                 This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
             </div>
             <div class="signUpPhrase">
-                Sign up <a class="cursive">now</a> to get started.
+                Sign up <i>now</i> to get started.
             </div>
             <div class="beggingPhrase">
-                You <a class="cursive">know</a> you want to.
+                You <i>know</i> you want to.
             </div>
         </div>
-        <form method="post">
-            <legend>Lets do this!</legend>
-            <fieldset>
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" placeholder="Teyana" name="first_name">
-                <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" placeholder="Taylor" name="last_name">
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="you@example.com" name="email" required>
-                <label for="phoneNum">PHONE NUMBER</label>
-                <input type="tel" id="phoneNum" placeholder="(555)-555-5555" name="tel_number" minlength="10" maxlength="10" title="Always 10 characters only" required>
-            </fieldset>
-            <fieldset>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
-                <label for="confirmPass">CONFIRM PASSWORD</label>
-                <input type="password" id="confirmPass" required>
-            </fieldset>
-            <button id="submitButton" type="submit">Create Account</button>
-        </form>
+        <div class="middleForm">
+            <form id="signUp" method="post">
+                <legend>Lets do this!</legend>
+                <div class="fullName">
+                    <fieldset>
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" placeholder="Teyana" name="first_name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" placeholder="Taylor" name="last_name">
+                    </fieldset>
+                </div>
+                <div class="emailAndNumber">
+                    <fieldset>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="you@example.com" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phoneNum">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNum" placeholder="(555)-555-5555" name="tel_number" minlength="10" maxlength="10" title="Always 10 characters only" required>
+                    </fieldset>
+                </div>
+                <div class="password">
+                    <fieldset>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="confirmPass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPass" required>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        <div class="bottomText">
+            <button id="submitButton" form="signUp" type="submit">Create Account</button>
+            <div class="logInText">Already have an account? <a href="https://www.google.com">Log in</a></div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
