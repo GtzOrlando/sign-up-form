@@ -122,7 +122,7 @@ fieldset {
     gap: 60px;
 }
 
-.errorMessage {
+#errorMessage {
     font-size: 13px;
     color: red;
 }
