@@ -121,3 +121,17 @@ fieldset {
     display: flex;
     gap: 60px;
 }
+
+.errorMessage {
+    font-size: 13px;
+    color: red;
+}
+
+.error {
+    border-color: red;
+}
+
+.correct {
+    border-color: green;
+}
+

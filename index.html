@@ -53,17 +53,18 @@
                 <div class="password">
                     <fieldset>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+                        <input class="error" type="password" id="password" name="password" required>
+                        <div class="errorMessage">*Passwords do not match</div>
                     </fieldset>
                     <fieldset>
                         <label for="confirmPass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPass" required>
+                        <input class="error" type="password" id="confirmPass" required>
                     </fieldset>
                 </div>
             </form>
         </div>
         <div class="bottomText">
-            <button id="submitButton" form="signUp" type="submit">Create Account</button>
+            <button id="submitButton" form="signUp" type="submit" disabled>Create Account</button>
             <div class="logInText">Already have an account? <a href="https://www.google.com">Log in</a></div>
         </div>
     </div>
